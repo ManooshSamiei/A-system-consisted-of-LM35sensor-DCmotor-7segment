@@ -1,0 +1,48 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+second                                                                            0x0260       2
+display                                                                           0x0262      20
+key                                                                               0x0276       1
+c                                                                                 0x0277       1
+comparematch                                                                      0x0278       1
+rx_buffer                                                                         0x0279       8
+rx_wr_index                                                                       0x0281       1
+rx_rd_index                                                                       0x0282       1
+rx_counter                                                                        0x0283       1
+tx_buffer                                                                         0x0284       8
+tx_wr_index                                                                       0x028C       1
+tx_rd_index                                                                       0x028D       1
+tx_counter                                                                        0x028E       1
+_seed                                                                             0x028F       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+year                                                                              R4,R5        2
+mounth                                                                            R6,R7        2
+day                                                                               R8,R9        2
+hour                                                                              R10,R11      2
+minute                                                                            R12,R13      2
+rx_buffer_overflow                                                                R2.0      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart_rx_isr                                                                      0x001AA     46
+getchar                                                                           0x001D8     32
+usart_tx_isr                                                                      0x001F8     36
+putchar                                                                           0x0021C     40
+timer0_comp_isr                                                                   0x00244    167
+read_adc                                                                          0x002EB     15
+main                                                                              0x002FA    487
+putsf                                                                             0x004E1     22
+put_usart_G101                                                                    0x004F7     14
+_print_G101                                                                       0x00505    308
+printf                                                                            0x00639     37
+strlen                                                                            0x0065E     12
+strlenf                                                                           0x0066A     13
